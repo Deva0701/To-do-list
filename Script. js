@@ -1,11 +1,11 @@
-function addSeries() {
-    var input = document.getElementById("seriesInput");
-    var seriesName = input.value.trim();
+function addapps() {
+    var input = document.getElementById("AppsInput");
+    var AppsName = input.value.trim();
     
-    if (seriesName !== "") {
-      var ul = document.getElementById("seriesList");
+    if (AppsName !== "") {
+      var ul = document.getElementById("appsList");
       var li = document.createElement("li");
-      li.textContent = seriesName;
+      li.textContent = appsName;
       
       li.addEventListener("click", function() {
         ul.removeChild(li);
@@ -19,6 +19,6 @@ function addSeries() {
       ul.appendChild(li);
       input.value = "";
     } else {
-      alert("Please enter a series name!");
+      alert("Please enter a Apps name!");
     }
   }
